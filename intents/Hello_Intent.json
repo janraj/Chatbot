@@ -1,0 +1,37 @@
+{
+        "name": "Hello_Intent",
+        "description": "Say hello to BIBot",
+        "conclusionStatement": {
+          "messages": [
+            {
+              "content": "via code hook",
+              "contentType": "PlainText"
+            }
+          ]
+        },
+        "fulfillmentActivity": {
+          "codeHook": {
+            "messageVersion": "1.0",
+            "uri": "{{lambda-arn}}"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "hello",
+          "hello there",
+          "bro",
+          "dude",
+          "hey",
+          "hey bro",
+          "hey dude",
+          "hey man",
+          "hey there",
+          "hi",
+          "hi there",
+          "BIBot",
+          "yo",
+          "you there"
+        ],
+        "slots": [
+        ]
+}
