@@ -1,7 +1,5 @@
-## Amazon Lex BI Bot
+STEPS:
+	1) Clone the repo 
+	2) pip install awscli --upgrade --user
+	3) pip install boto3 
 
-Building a Conversational Business Intelligence Bot with Amazon Lex
-
-## License Summary
-
-This sample code is made available under a modified MIT license. See the LICENSE file.
