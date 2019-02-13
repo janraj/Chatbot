@@ -7,10 +7,12 @@
 #
 # Environment variables to be set in the CodeBuild project
 #
-# $BOT				Name of the Lex bot
-# $INTENTS      		List of intent names for the bot
+BOT=CitrixBot				
+#Name of the Lex bot
+INTENTS="Hello_Intent Citrix_Ingress_Intent"
+#      		List of intent names for the bot
 # $SLOTS        		List of slot type names for the bot
-# $LAMBDA       		Name of the Lambda fulfillment function for the bot
+# LAMBDA="Count_Intent"
 # $LAMBDA_ROLE_ARN     		ARN for the Lambda execution role
 # $ATHENA_DB    		Name of the Athena database
 # $ATHENA_OUTPUT_LOCATION	Name of the S3 bucket for Athena output
@@ -18,6 +20,7 @@
 
 # Load the Lambda functions for each Intent
 echo "Lambda execution role = $LAMBDA_ROLE_ARN"
+echo  "List of Intents = $INTENTS"
 for i in $INTENTS
 do
     module_name=`echo $i | tr '[:upper:]' '[:lower:]'`
