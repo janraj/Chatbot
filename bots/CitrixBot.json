@@ -8,6 +8,10 @@
         }, 
         {
             "intentVersion": "$LATEST", 
+            "intentName": "Citrix_Ingress_Intent"
+        }, 
+        {
+            "intentVersion": "$LATEST", 
             "intentName": "Top_Intent"
         }, 
         {

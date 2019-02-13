@@ -1,6 +1,6 @@
 {
-        "name": "Hello_Intent",
-        "description": "Say hello to Citrix Genie",
+        "name": "Citrix_Ingress_Intent",
+        "description": "Talk to  Citrix Genie for ingress controller details",
         "conclusionStatement": {
           "messages": [
             {
