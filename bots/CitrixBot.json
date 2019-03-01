@@ -1,5 +1,5 @@
 {
-  "name": "BIBot",
+  "name": "CitrixBot",
   "description": "BIBot - a SQL query bot for the TICKIT database",
   "intents": [
         {
@@ -9,6 +9,10 @@
         {
             "intentVersion": "$LATEST", 
             "intentName": "Citrix_Ingress_Intent"
+        }, 
+        {
+            "intentVersion": "$LATEST", 
+            "intentName": "Get_About_Netscaler_Intent"
         }, 
         {
             "intentVersion": "$LATEST", 

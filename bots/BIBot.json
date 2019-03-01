@@ -12,6 +12,10 @@
         }, 
         {
             "intentVersion": "$LATEST", 
+            "intentName": "Get_About_Netscaler_Intent"
+        }, 
+        {
+            "intentVersion": "$LATEST", 
             "intentName": "Top_Intent"
         }, 
         {

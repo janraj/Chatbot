@@ -1,0 +1,32 @@
+{
+        "name": "About_Netscaler_Intent",
+        "description": "Talk to  Citrix Genie for getting the Netscaler informations",
+        "conclusionStatement": {
+          "messages": [
+            {
+              "content": "via code hook",
+              "contentType": "PlainText"
+            }
+          ]
+        },
+        "fulfillmentActivity": {
+          "codeHook": {
+            "messageVersion": "1.0",
+            "uri": "{{lambda-arn}}"
+          },
+          "type": "CodeHook"
+        },
+        "sampleUtterances": [
+          "Get Info about netscaler",
+          "Netscaler Version",
+          "About Netscaler",
+          "About NS",
+          "About Netscaler Box",
+          "About Citrix ADC",
+          "Tell me about ADC",
+          "Tell me about my netscaler",
+          "Tell me about my ADC",
+        ],
+        "slots": [
+        ]
+}
