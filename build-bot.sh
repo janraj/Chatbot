@@ -9,7 +9,7 @@
 #
 BOT=CitrixBot				
 #Name of the Lex bot
-INTENTS="Hello_Intent Citrix_Ingress_Intent"
+INTENTS="Hello_Intent Citrix_Ingress_Intent Get_About_Netscaler_Intent"
 #      		List of intent names for the bot
 # $SLOTS        		List of slot type names for the bot
 # LAMBDA="Count_Intent"

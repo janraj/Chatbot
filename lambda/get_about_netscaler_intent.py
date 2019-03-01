@@ -32,8 +32,8 @@ def lambda_handler(event, context):
     return get_about_netscaler_intent_handler(event, session_attributes)
 
 def ns_get_version(ip, username, password):
-   resp_version  = requests.get('http://' + ip + '/nitro/v1/config/' + "nsversion", auth=("nsroot", "nsroot"))
-   resp_hw = requests.get('http://' + ip + '/nitro/v1/config/' + "nshardware", auth=(username, password))
+   resp_version  = requests.get('https://' + ip + '/nitro/v1/config/' + "nsversion", auth=(username, password), verify=False)
+   resp_hw = requests.get('https://' + ip + '/nitro/v1/config/' + "nshardware", auth=(username, password), verify=False)
    list_dict = []
    d = {}
    if "nsversion" in json.loads(resp_version.text):
